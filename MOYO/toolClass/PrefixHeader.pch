@@ -1,0 +1,250 @@
+//
+//  PrefixHeader.pch
+//  VTIME
+//
+//  Created by MadridLee on 2017/9/6.
+//  Copyright © 2017年 MadridLee. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+#import "Utility.h"
+#import "HTTPSRequestURL.h"
+#import "MY_LYPersonInfoModel.h"   //  个人信息model - 通用
+#import "MY_LLDBManager.h"         //  数据库管理
+#import "TLHTTPRequest.h"
+#import <Masonry.h>
+#import "IQKeyboardManager.h"
+#import <UIImageView+WebCache.h>
+#import <UIButton+WebCache.h>
+#import "EaseUI.h"
+#import <Hyphenate/Hyphenate.h>
+#import <MJRefresh.h>
+#import "LQProgressHud.h"
+#import <MBProgressHUD.h>
+#import <JPush/JPUSHService.h>
+#import "ChatViewController.h"      //  聊天
+#import "ChatDemoHelper.h"
+#import "MY_LLSexConsumerView.h"       //  性别&消费等级
+#import "MY_LLChatRedPacketView.h"     //  聊天红包弹窗
+#import "MY_LLPayViewController.h"     //  支付
+#import <AlipaySDK/AlipaySDK.h>
+#import "MY_TTLSelfCenterViewController.h" //  个人信息
+//#import "RCDTabBarBtn.h"        //小红点
+#import <UMMobClick/MobClick.h>
+#import <UMSocialCore/UMSocialCore.h>
+#import "TabBarController.h"
+#import "UITabBar+badge.h"
+#import "MY_TTLShareOnlyView.h"
+#import "MY_TTLToBeNobilityViewController.h"
+#import "BaseNavigationController.h"
+#import "SXPickPhoto.h"
+#import "MY_LYMessageInfoModel.h"
+#import "MY_TTLNewPwopleGuideModel.h"//新手引导
+#import "MY_TTLNewPeopleGuideView.h"
+//  微信
+#import <WXApiObject.h>
+#import <WXApi.h>
+#import "WXApiManager.h"
+#import "UIImage+Extension.h"
+
+
+
+#ifdef __OBJC__
+//#import <HelpDeskLite/HelpDeskLite.h>
+//#import "HelpDeskUI.h"
+#endif
+
+
+
+#define iOS7Later ([UIDevice currentDevice].systemVersion.floatValue >= 7.0f)
+#define iOS8Later ([UIDevice currentDevice].systemVersion.floatValue >= 8.0f)
+#define iOS9Later ([UIDevice currentDevice].systemVersion.floatValue >= 9.0f)
+#define iOS9_1Later ([UIDevice currentDevice].systemVersion.floatValue >= 9.1f)
+
+
+#pragma mark ******************** message define ********************
+#define VTaskM @"vtimetask" 
+
+
+
+
+#pragma mark ******************** userDefaults ********************
+
+
+//  userDefaults取值代言url
+#define DaiYanURL [[NSUserDefaults standardUserDefaults] objectForKey:@"daiyanUrl"]
+#define ADDDaiYanURL(obj) [[NSUserDefaults standardUserDefaults] setObject:obj forKey:@"daiyanUrl"];
+#define REMDaiYanURL [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"daiyanUrl"];
+
+//  userDefaults存值
+#define UserSetObject(obj,key) [[NSUserDefaults standardUserDefaults] setObject:obj forKey:key];
+
+//  userDefaults取值
+#define UserObject(key) [[NSUserDefaults standardUserDefaults] objectForKey:key]
+
+//  userDefaults存值key
+#define ADDUSERKEY(obj) [[NSUserDefaults standardUserDefaults] setObject:obj forKey:Key];\
+//  userDefaults存值userId
+#define ADDUSERID(obj) [[NSUserDefaults standardUserDefaults] setObject:obj forKey:UserId];\
+//  userDefaults存值Version
+#define ADDVERSION(obj) [[NSUserDefaults standardUserDefaults] setObject:obj forKey:Version];\
+
+//  userDefaults存值红包推送
+#define ADDHBnoti(obj) [[NSUserDefaults standardUserDefaults] setObject:obj forKey:@"hongbao"];\
+
+
+
+//  userDefaults删除key
+#define REMUSERKEY [[NSUserDefaults standardUserDefaults] removeObjectForKey:Key]
+//  userDefaults删除userId
+#define REMUSERID [[NSUserDefaults standardUserDefaults] removeObjectForKey:UserId]
+//  userDefaults删除Version
+#define REMVERSION [[NSUserDefaults standardUserDefaults] removeObjectForKey:Version]
+
+//  userDefaults删除gongbaonoti
+#define REMHB [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"hongbao"]
+
+//  userDefaults取值key
+#define USERKEY [[NSUserDefaults standardUserDefaults] objectForKey:Key]
+//  userDefaults取值userId
+#define USERID [[NSUserDefaults standardUserDefaults] objectForKey:UserId]
+//  userDefaults取值Version
+#define VERSION [[NSUserDefaults standardUserDefaults] objectForKey:Version]
+
+#define hongbnum [[NSUserDefaults standardUserDefaults] objectForKey:@"hongbao"]
+//  声音设置
+#define MYVOCIE [[NSUserDefaults standardUserDefaults] objectForKey:VOCIEStatus]
+//  震动设置
+#define MYSHOCKS [[NSUserDefaults standardUserDefaults] objectForKey:SHOCKStatus]
+// 新手指导
+#define NewPeopleFirstCome [[NSUserDefaults standardUserDefaults] objectForKey:NewPeople]
+#define ADDNewPeopleFirstCome(obj) [[NSUserDefaults standardUserDefaults] setObject:obj forKey:NewPeople];
+
+
+#pragma mark -----------个人信息关键字
+//  登录的key
+#define Key @"key"
+//  userId
+#define UserId @"userId"
+//  版本号
+#define Version @"Version"
+//  昵称
+#define NickName @"nickName"
+//  声音设置key
+#define VOCIEStatus @"voiceStatus"
+//  震动设置key
+#define SHOCKStatus @"shockStatus"
+//  userName账号
+#define UserName @"userName"
+#define UserRemObject(KEY) [[NSUserDefaults standardUserDefaults] removeObjectForKey:KEY]
+
+#define INVITE @"快来邀请好友吧"
+
+// 新手指导
+#define NewPeople @"NEWPEOPLEFIRSTCOME"
+
+// 我的页面 未读红色按钮
+#define GetOnHome @"上首页"
+#define BecomeNobility @"成为贵族"
+#define InviteFriend @"邀请好友"
+#define PlayingMethodStrategy @"玩法攻略"
+
+
+#pragma mark ***********常用tag值
+#define MyTAG 5000  
+
+
+
+#pragma mark -----------地图设置
+#define DefaultLocationTimeout 10
+#define DefaultReGeocodeTimeout 5
+
+#pragma mark ===========各种账号
+#define GAOAMAPKEY @"e20fc8323850c8c36d5fb0e990233115"
+#define JPUSH @"49884dd6033c95c4eba443f3"
+
+#define AlipayScheme @"tingtingVTime"
+
+#define WXChatID @"11ab38a2cbbbeb1be6f6fac94fab8a91"
+
+#define DEFAULT_LONGITUDE @"121.4378200000"
+#define DEFAULT_LATITUDE @"31.1948900000"
+
+
+#pragma mark - - 任务 领取状态值
+#define StatusNotOnHomeReceiveTask 16001 //参与任务时候，当前用户没有上首页
+#define StatusNotCompliteTask 16002 //  用户中止任务时，当前没有未完成的任务
+
+#define KNoticationDaiyan @"KNoticationDaiyan"   //代言
+#define KNoticationIsForbidden @"KNoticationIsForbidden"     //封号
+#define KNoticationSenderSingleRedPacket @"KNoticationSenderSingleRedPacket"   //发小红包通知
+#define KNoticationSenderdSayHellowRedPacket @"KNoticationSenderdSayHellowRedPacket"      //发送动态
+
+#define KNoticationChatRefresh @"KNoticationChatRefresh"  //私聊刷新
+#pragma mark -----------各种颜色
+//主体色
+#define RGBCOLOR(R,G,B,ALPHA) [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:ALPHA]
+#define BGCOLOR   [Utility colorWithHexString:@"#efefef" alpha:1.0]
+#define MAINBLACKCOLOR [Utility colorWithHexString:@"#272729" alpha:1.0]
+#define GOLDCOLOR [Utility colorWithHexString:@"#65258D" alpha:1.0]
+#define GARYCOLOR [Utility colorWithHexString:@"#bec1ba" alpha:1.0]
+#define COlOR333 [Utility colorWithHexString:@"333333" alpha:1.0]
+#define COlOR666 [Utility colorWithHexString:@"666666" alpha:1.0]
+#define COlOR999 [Utility colorWithHexString:@"999999" alpha:1.0]
+#define BTNCOLOR [Utility colorWithHexString:@"#e2c04e" alpha:1.0]
+#define THREEC  [Utility colorWithHexString:@"3c3c3c" alpha:1.0]
+#define ERDCOLOR [Utility colorWithHexString:@"fa4034" alpha:1.0]
+#define YELLOWCOLOR [Utility colorWithHexString:@"F0C165" alpha:1.0]
+#define KRefresDynamicNotification @"RefresDynamicNotification"
+#pragma mark -----------尺寸
+
+//  屏幕宽
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+//  屏幕高
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+//  相对于iPhone6计算宽度
+#define ScaleWidth(width) ((width / 375.0) * SCREEN_WIDTH)
+//  相对于iPhone6计算高度
+#define ScaleHeight(height) ((height / 667.0) * SCREEN_HEIGHT)
+//  聊天文字最宽
+#define MsgWidthMax (SCREEN_WIDTH - 214)
+//  分享的frame
+#define ShareFrame CGRectMake(0, SCREEN_HEIGHT, SCREEN_WIDTH, 216)
+#define ShareDeleteFrame CGRectMake(0, SCREEN_HEIGHT, SCREEN_WIDTH, 333)
+
+#define ProportionAdapter SCREEN_WIDTH/375
+
+//  状态栏高度
+#define StatusHeight [[UIApplication sharedApplication] statusBarFrame].size.height
+//  导航高度
+#define NavigationHeight 44
+// 状态栏加导航高度
+#define StatusNavigationHeight StatusHeight + 44
+// 适配iPhone x 底栏高度
+#define TabbarHeight    (StatusHeight>20?83:49)
+
+#define BottomHeight    (StatusHeight>20?34:0)
+
+
+#pragma mark ******************** 提示 ********************
+
+#define ALERT_SHOW(TIT,MSG,DEL,CAN,CER)   UIAlertView* AlertView = [[UIAlertView alloc] initWithTitle:TIT message:MSG delegate:DEL cancelButtonTitle:CAN otherButtonTitles:CER, nil]; \
+[AlertView show];
+
+
+#pragma mark ******************** 打印log ********************
+
+#ifdef DEBUG
+#define Dbg(format, ...) NSLog((@"%s [Line %d] " format), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+#define Dbg(format, ...) //DumpLog((@"%s [Line %d] " format), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#endif
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */

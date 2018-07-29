@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="117" id="KGk-i7-Jjw" customClass="MY_TTLVRequireTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="117"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="116.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="前往绑定" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IcB-jG-jDe">
+                        <rect key="frame" x="156" y="92" width="61.5" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="7z4-fg-04N"/>
+                            <constraint firstAttribute="width" constant="61.5" id="kxw-3a-DLc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rWS-Y2-7s6">
+                        <rect key="frame" x="158" y="18" width="59" height="59"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="59" id="TBg-Sc-sjO"/>
+                            <constraint firstAttribute="height" constant="59" id="dpp-K1-5FM"/>
+                        </constraints>
+                        <state key="normal" image="endBind"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="rWS-Y2-7s6" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="3v7-yo-g9u"/>
+                    <constraint firstItem="rWS-Y2-7s6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="7" id="BFs-sW-PS7"/>
+                    <constraint firstItem="IcB-jG-jDe" firstAttribute="top" secondItem="rWS-Y2-7s6" secondAttribute="bottom" constant="15" id="BeA-CJ-hrY"/>
+                    <constraint firstItem="IcB-jG-jDe" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="OTE-Kc-igG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bindBtn" destination="rWS-Y2-7s6" id="PF4-bS-Lkb"/>
+                <outlet property="bindLabel" destination="IcB-jG-jDe" id="UEB-CJ-Ydi"/>
+            </connections>
+            <point key="canvasLocation" x="-599.5" y="76.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="endBind" width="39" height="59"/>
+    </resources>
+</document>

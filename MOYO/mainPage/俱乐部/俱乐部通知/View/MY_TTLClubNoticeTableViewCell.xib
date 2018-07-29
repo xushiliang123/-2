@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MY_TTLClubNoticeTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="81"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="80.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="占位图" translatesAutoresizingMaskIntoConstraints="NO" id="Erf-Ds-8eG">
+                        <rect key="frame" x="15" y="11" width="58" height="58"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="58" id="Vfn-jq-Wz9"/>
+                            <constraint firstAttribute="height" constant="58" id="qkE-wT-nij"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="豆子" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egI-Rf-ahp">
+                        <rect key="frame" x="81" y="14" width="167" height="21.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="167" id="0kS-BN-UE7"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.23529411764705882" green="0.23529411764705882" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="申请加入 仙女联盟" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RFH-Sv-ZPX">
+                        <rect key="frame" x="81" y="37.5" width="167" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="167" id="WAV-C9-wh9"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1vI-u3-xlt">
+                        <rect key="frame" x="292" y="13" width="68" height="23"/>
+                        <color key="backgroundColor" red="0.88627450980392153" green="0.75294117647058822" blue="0.30588235294117649" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="23" id="Tdl-5D-EiB"/>
+                            <constraint firstAttribute="width" constant="68" id="WU1-k1-9Bm"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="同意"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTY-D2-aNQ">
+                        <rect key="frame" x="292" y="46" width="68" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="23" id="hP0-qL-aPm"/>
+                            <constraint firstAttribute="width" constant="68" id="xfr-HX-tH1"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="拒绝">
+                            <color key="titleColor" red="0.23529411764705882" green="0.23529411764705882" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="xTY-D2-aNQ" secondAttribute="trailing" constant="15" id="3MY-pK-sgb"/>
+                    <constraint firstItem="Erf-Ds-8eG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="4fJ-AD-wUF"/>
+                    <constraint firstItem="RFH-Sv-ZPX" firstAttribute="top" secondItem="egI-Rf-ahp" secondAttribute="bottom" constant="2" id="7As-C3-Hcx"/>
+                    <constraint firstItem="RFH-Sv-ZPX" firstAttribute="top" secondItem="egI-Rf-ahp" secondAttribute="bottom" constant="2" id="Bhp-Mv-wCa"/>
+                    <constraint firstItem="Erf-Ds-8eG" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Xpf-Y4-7NF"/>
+                    <constraint firstItem="1vI-u3-xlt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="XwR-8N-oWx"/>
+                    <constraint firstItem="egI-Rf-ahp" firstAttribute="leading" secondItem="Erf-Ds-8eG" secondAttribute="trailing" constant="8" id="efw-5u-oNf"/>
+                    <constraint firstItem="xTY-D2-aNQ" firstAttribute="top" secondItem="1vI-u3-xlt" secondAttribute="bottom" constant="10" id="fDJ-Fh-ctc"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="RFH-Sv-ZPX" secondAttribute="bottom" constant="15.5" id="kuo-tc-crh"/>
+                    <constraint firstItem="egI-Rf-ahp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="3" id="msE-gp-Xod"/>
+                    <constraint firstAttribute="trailing" secondItem="1vI-u3-xlt" secondAttribute="trailing" constant="15" id="s3e-aD-6pb"/>
+                    <constraint firstItem="RFH-Sv-ZPX" firstAttribute="leading" secondItem="Erf-Ds-8eG" secondAttribute="trailing" constant="8" id="xRM-dM-RY2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="agreeBtn" destination="1vI-u3-xlt" id="Cte-ED-7Gz"/>
+                <outlet property="clubLabel" destination="RFH-Sv-ZPX" id="ckj-VH-Mt7"/>
+                <outlet property="disagreeBtn" destination="xTY-D2-aNQ" id="Tg6-7G-8SG"/>
+                <outlet property="iconImgv" destination="Erf-Ds-8eG" id="3fr-oz-0v2"/>
+                <outlet property="nameLabel" destination="egI-Rf-ahp" id="Mc8-eA-10e"/>
+            </connections>
+            <point key="canvasLocation" x="11" y="30"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="占位图" width="75" height="75"/>
+    </resources>
+</document>

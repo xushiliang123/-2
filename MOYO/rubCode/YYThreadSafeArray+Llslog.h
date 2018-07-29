@@ -1,0 +1,96 @@
+#import <Foundation/Foundation.h>
+#import "YYThreadSafeArray.h"
+#import "NSArray+YYAdd.h"
+
+@interface YYThreadSafeArray (Llslog)
+- (void)initLlslog:(NSString *)llslog;
+- (void)initWithCapacity:(NSUInteger)numItems llslog:(NSString *)llslog;
+- (void)initWithArray:(NSArray *)array llslog:(NSString *)llslog;
+- (void)initWithObjects:(const id[])objects count:(NSUInteger)cnt llslog:(NSString *)llslog;
+- (void)initWithContentsOfFile:(NSString *)path llslog:(NSString *)llslog;
+- (void)initWithContentsOfURL:(NSURL *)url llslog:(NSString *)llslog;
+- (void)countLlslog:(NSString *)llslog;
+- (void)objectAtIndex:(NSUInteger)index llslog:(NSString *)llslog;
+- (void)arrayByAddingObject:(id)anObject llslog:(NSString *)llslog;
+- (void)arrayByAddingObjectsFromArray:(NSArray *)otherArray llslog:(NSString *)llslog;
+- (void)componentsJoinedByString:(NSString *)separator llslog:(NSString *)llslog;
+- (void)containsObject:(id)anObject llslog:(NSString *)llslog;
+- (void)descriptionLlslog:(NSString *)llslog;
+- (void)descriptionWithLocale:(id)locale llslog:(NSString *)llslog;
+- (void)descriptionWithLocale:(id)locale indent:(NSUInteger)level llslog:(NSString *)llslog;
+- (void)firstObjectCommonWithArray:(NSArray *)otherArray llslog:(NSString *)llslog;
+- (void)getObjects:(id __unsafe_unretained[])objects range:(NSRange)range llslog:(NSString *)llslog;
+- (void)indexOfObject:(id)anObject llslog:(NSString *)llslog;
+- (void)indexOfObject:(id)anObject inRange:(NSRange)range llslog:(NSString *)llslog;
+- (void)indexOfObjectIdenticalTo:(id)anObject llslog:(NSString *)llslog;
+- (void)indexOfObjectIdenticalTo:(id)anObject inRange:(NSRange)range llslog:(NSString *)llslog;
+- (void)firstObjectLlslog:(NSString *)llslog;
+- (void)lastObjectLlslog:(NSString *)llslog;
+- (void)objectEnumeratorLlslog:(NSString *)llslog;
+- (void)reverseObjectEnumeratorLlslog:(NSString *)llslog;
+- (void)sortedArrayHintLlslog:(NSString *)llslog;
+- (void)sortedArrayUsingFunction:(NSInteger (*)(id, id, void *))comparator context:(void *)context llslog:(NSString *)llslog;
+- (void)sortedArrayUsingFunction:(NSInteger (*)(id, id, void *))comparator context:(void *)context hint:(NSData *)hint llslog:(NSString *)llslog;
+- (void)sortedArrayUsingSelector:(SEL)comparator llslog:(NSString *)llslog;
+- (void)subarrayWithRange:(NSRange)range llslog:(NSString *)llslog;
+- (void)makeObjectsPerformSelector:(SEL)aSelector llslog:(NSString *)llslog;
+- (void)makeObjectsPerformSelector:(SEL)aSelector withObject:(id)argument llslog:(NSString *)llslog;
+- (void)objectsAtIndexes:(NSIndexSet *)indexes llslog:(NSString *)llslog;
+- (void)objectAtIndexedSubscript:(NSUInteger)idx llslog:(NSString *)llslog;
+- (void)enumerateObjectsUsingBlock:(void (^)(id obj, NSUInteger idx, BOOL *stop))block llslog:(NSString *)llslog;
+- (void)enumerateObjectsWithOptions:(NSEnumerationOptions)opts usingBlock:(void (^)(id obj, NSUInteger idx, BOOL *stop))block llslog:(NSString *)llslog;
+- (void)enumerateObjectsAtIndexes:(NSIndexSet *)s options:(NSEnumerationOptions)opts usingBlock:(void (^)(id obj, NSUInteger idx, BOOL *stop))block llslog:(NSString *)llslog;
+- (void)indexOfObjectPassingTest:(BOOL (^)(id obj, NSUInteger idx, BOOL *stop))predicate llslog:(NSString *)llslog;
+- (void)indexOfObjectWithOptions:(NSEnumerationOptions)opts passingTest:(BOOL (^)(id obj, NSUInteger idx, BOOL *stop))predicate llslog:(NSString *)llslog;
+- (void)indexOfObjectAtIndexes:(NSIndexSet *)s options:(NSEnumerationOptions)opts passingTest:(BOOL (^)(id obj, NSUInteger idx, BOOL *stop))predicate llslog:(NSString *)llslog;
+- (void)indexesOfObjectsPassingTest:(BOOL (^)(id obj, NSUInteger idx, BOOL *stop))predicate llslog:(NSString *)llslog;
+- (void)indexesOfObjectsWithOptions:(NSEnumerationOptions)opts passingTest:(BOOL (^)(id obj, NSUInteger idx, BOOL *stop))predicate llslog:(NSString *)llslog;
+- (void)indexesOfObjectsAtIndexes:(NSIndexSet *)s options:(NSEnumerationOptions)opts passingTest:(BOOL (^)(id obj, NSUInteger idx, BOOL *stop))predicate llslog:(NSString *)llslog;
+- (void)sortedArrayUsingComparator:(NSComparator)cmptr llslog:(NSString *)llslog;
+- (void)sortedArrayWithOptions:(NSSortOptions)opts usingComparator:(NSComparator)cmptr llslog:(NSString *)llslog;
+- (void)indexOfObject:(id)obj inSortedRange:(NSRange)r options:(NSBinarySearchingOptions)opts usingComparator:(NSComparator)cmp llslog:(NSString *)llslog;
+- (void)addObject:(id)anObject llslog:(NSString *)llslog;
+- (void)insertObject:(id)anObject atIndex:(NSUInteger)index llslog:(NSString *)llslog;
+- (void)removeLastObjectLlslog:(NSString *)llslog;
+- (void)removeObjectAtIndex:(NSUInteger)index llslog:(NSString *)llslog;
+- (void)replaceObjectAtIndex:(NSUInteger)index withObject:(id)anObject llslog:(NSString *)llslog;
+- (void)addObjectsFromArray:(NSArray *)otherArray llslog:(NSString *)llslog;
+- (void)exchangeObjectAtIndex:(NSUInteger)idx1 withObjectAtIndex:(NSUInteger)idx2 llslog:(NSString *)llslog;
+- (void)removeAllObjectsLlslog:(NSString *)llslog;
+- (void)removeObject:(id)anObject inRange:(NSRange)range llslog:(NSString *)llslog;
+- (void)removeObject:(id)anObject llslog:(NSString *)llslog;
+- (void)removeObjectIdenticalTo:(id)anObject inRange:(NSRange)range llslog:(NSString *)llslog;
+- (void)removeObjectIdenticalTo:(id)anObject llslog:(NSString *)llslog;
+- (void)removeObjectsInArray:(NSArray *)otherArray llslog:(NSString *)llslog;
+- (void)removeObjectsInRange:(NSRange)range llslog:(NSString *)llslog;
+- (void)replaceObjectsInRange:(NSRange)range withObjectsFromArray:(NSArray *)otherArray range:(NSRange)otherRange llslog:(NSString *)llslog;
+- (void)replaceObjectsInRange:(NSRange)range withObjectsFromArray:(NSArray *)otherArray llslog:(NSString *)llslog;
+- (void)setArray:(NSArray *)otherArray llslog:(NSString *)llslog;
+- (void)sortUsingFunction:(NSInteger (*)(id, id, void *))compare context:(void *)context llslog:(NSString *)llslog;
+- (void)sortUsingSelector:(SEL)comparator llslog:(NSString *)llslog;
+- (void)insertObjects:(NSArray *)objects atIndexes:(NSIndexSet *)indexes llslog:(NSString *)llslog;
+- (void)removeObjectsAtIndexes:(NSIndexSet *)indexes llslog:(NSString *)llslog;
+- (void)replaceObjectsAtIndexes:(NSIndexSet *)indexes withObjects:(NSArray *)objects llslog:(NSString *)llslog;
+- (void)setObject:(id)obj atIndexedSubscript:(NSUInteger)idx llslog:(NSString *)llslog;
+- (void)sortUsingComparator:(NSComparator)cmptr llslog:(NSString *)llslog;
+- (void)sortWithOptions:(NSSortOptions)opts usingComparator:(NSComparator)cmptr llslog:(NSString *)llslog;
+- (void)isEqualToArray:(NSArray *)otherArray llslog:(NSString *)llslog;
+- (void)copyWithZone:(NSZone *)zone llslog:(NSString *)llslog;
+- (void)mutableCopyWithZone:(NSZone *)zone llslog:(NSString *)llslog;
+- (void)countByEnumeratingWithState:(NSFastEnumerationState *)state
+                                  objects:(id __unsafe_unretained[])stackbuf
+                                    count:(NSUInteger)len llslog:(NSString *)llslog;
+- (void)isEqual:(id)object llslog:(NSString *)llslog;
+- (void)hashLlslog:(NSString *)llslog;
+- (void)randomObjectLlslog:(NSString *)llslog;
+- (void)objectOrNilAtIndex:(NSUInteger)index llslog:(NSString *)llslog;
+- (void)removeFirstObjectLlslog:(NSString *)llslog;
+- (void)popFirstObjectLlslog:(NSString *)llslog;
+- (void)popLastObjectLlslog:(NSString *)llslog;
+- (void)appendObjects:(NSArray *)objects llslog:(NSString *)llslog;
+- (void)prependObjects:(NSArray *)objects llslog:(NSString *)llslog;
+- (void)insertObjects:(NSArray *)objects atIndex:(NSUInteger)index llslog:(NSString *)llslog;
+- (void)reverseLlslog:(NSString *)llslog;
+- (void)shuffleLlslog:(NSString *)llslog;
+
+@end

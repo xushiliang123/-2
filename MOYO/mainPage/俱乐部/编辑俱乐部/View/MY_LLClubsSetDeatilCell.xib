@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MY_LLClubsSetDeatilCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="109.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="俱乐部介绍" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ohs-E0-Dlt">
+                        <rect key="frame" x="15" y="18" width="340" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="bny-20-0Vx"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.78823529411764703" green="0.78823529411764703" blue="0.78823529411764703" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="点击填写俱乐部介绍，让大家更了解您的俱乐部" translatesAutoresizingMaskIntoConstraints="NO" id="Qqs-dU-wHM">
+                        <rect key="frame" x="15" y="42" width="345" height="67.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Qqs-dU-wHM" secondAttribute="bottom" id="1mN-SC-sal"/>
+                    <constraint firstAttribute="trailing" secondItem="Qqs-dU-wHM" secondAttribute="trailing" constant="15" id="Ea8-zz-hgG"/>
+                    <constraint firstAttribute="trailing" secondItem="ohs-E0-Dlt" secondAttribute="trailing" constant="20" id="ILt-83-k3d"/>
+                    <constraint firstItem="ohs-E0-Dlt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="QEo-Fs-xG4"/>
+                    <constraint firstItem="Qqs-dU-wHM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="dic-on-0IJ"/>
+                    <constraint firstItem="ohs-E0-Dlt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="k3n-7b-6k1"/>
+                    <constraint firstItem="Qqs-dU-wHM" firstAttribute="top" secondItem="ohs-E0-Dlt" secondAttribute="bottom" constant="10" id="ozP-4v-N9k"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="deatilTextView" destination="Qqs-dU-wHM" id="bWd-1V-i45"/>
+            </connections>
+            <point key="canvasLocation" x="24.5" y="52"/>
+        </tableViewCell>
+    </objects>
+</document>

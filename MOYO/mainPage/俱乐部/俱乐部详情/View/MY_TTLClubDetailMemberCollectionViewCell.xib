@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MY_TTLClubDetailMemberCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="93" height="93"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="93" height="93"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="占位图" translatesAutoresizingMaskIntoConstraints="NO" id="euq-U2-Tbk">
+                        <rect key="frame" x="19" y="7" width="55" height="55"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="55" id="6bp-WQ-Vq6"/>
+                            <constraint firstAttribute="width" constant="55" id="P5a-A8-FvX"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJd-gD-irT">
+                        <rect key="frame" x="0.0" y="66" width="93" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="tYD-XI-fHk"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="kJd-gD-irT" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="0TE-Sc-uTF"/>
+                <constraint firstItem="euq-U2-Tbk" firstAttribute="centerX" secondItem="SEy-5g-ep8" secondAttribute="centerX" id="9ov-cK-rRY"/>
+                <constraint firstItem="euq-U2-Tbk" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="7" id="Atn-aT-S0P"/>
+                <constraint firstItem="kJd-gD-irT" firstAttribute="top" secondItem="euq-U2-Tbk" secondAttribute="bottom" constant="4" id="anV-Y5-P1u"/>
+                <constraint firstAttribute="trailing" secondItem="kJd-gD-irT" secondAttribute="trailing" id="sfB-dB-Eus"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="67" height="63"/>
+            <connections>
+                <outlet property="iconImgv" destination="euq-U2-Tbk" id="l1g-Tg-MkT"/>
+                <outlet property="nameLabel" destination="kJd-gD-irT" id="TZ4-M8-5gw"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="58.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="占位图" width="75" height="75"/>
+    </resources>
+</document>

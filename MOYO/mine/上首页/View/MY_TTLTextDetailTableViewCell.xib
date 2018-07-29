@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MY_TTLTextDetailTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="74.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上首页，增加自己的曝光度，认识更多的白富美高富帅！请上传清晰 健康 美美哒的照片或视频，该照片和视频需要人工审核" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JAe-R9-1FK">
+                        <rect key="frame" x="8" y="8" width="359" height="59"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <color key="highlightedColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="JAe-R9-1FK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="JC7-2F-yWd"/>
+                    <constraint firstItem="JAe-R9-1FK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="UWb-T0-6dD"/>
+                    <constraint firstAttribute="trailing" secondItem="JAe-R9-1FK" secondAttribute="trailing" constant="8" id="pnT-jO-hbB"/>
+                    <constraint firstAttribute="bottom" secondItem="JAe-R9-1FK" secondAttribute="bottom" constant="7.5" id="vkv-Xj-kzy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </tableViewCell>
+    </objects>
+</document>

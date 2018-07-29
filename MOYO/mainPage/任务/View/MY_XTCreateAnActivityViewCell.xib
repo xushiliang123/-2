@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MY_XTCreateAnActivityViewCell" rowHeight="169" id="KGk-i7-Jjw" customClass="MY_XTCreateAnActivityViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="404" height="169"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="404" height="168.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="任务说明" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jNg-vM-kox">
+                        <rect key="frame" x="20" y="16" width="65.5" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.39995902779999998" green="0.4000295103" blue="0.39994409679999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="发布色情，反动等文字将会被封号处理" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="THH-wc-mKQ">
+                        <rect key="frame" x="15" y="38.5" width="369" height="119.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(0/50)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="neU-N8-hO0">
+                        <rect key="frame" x="341" y="136.5" width="41" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XCV-CW-Z8s">
+                        <rect key="frame" x="0.0" y="168.5" width="404" height="0.5"/>
+                        <color key="backgroundColor" red="0.92148083448410034" green="0.92163199186325073" blue="0.92144864797592163" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="01y-Zd-eKj"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="neU-N8-hO0" secondAttribute="bottom" constant="15" id="80G-pF-gg3"/>
+                    <constraint firstAttribute="trailing" secondItem="neU-N8-hO0" secondAttribute="trailing" constant="22" id="ALn-XX-fyb"/>
+                    <constraint firstAttribute="trailing" secondItem="XCV-CW-Z8s" secondAttribute="trailing" id="IAI-gU-K0L"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="THH-wc-mKQ" secondAttribute="bottom" id="If9-U6-pgA"/>
+                    <constraint firstItem="THH-wc-mKQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-5" id="Osg-OP-TSW"/>
+                    <constraint firstItem="XCV-CW-Z8s" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Uax-TU-ysr"/>
+                    <constraint firstItem="jNg-vM-kox" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="cyc-gO-OQv"/>
+                    <constraint firstItem="jNg-vM-kox" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="eJs-Qa-eOf"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="THH-wc-mKQ" secondAttribute="trailing" id="he5-kh-o3H"/>
+                    <constraint firstAttribute="bottom" secondItem="XCV-CW-Z8s" secondAttribute="bottom" id="kYN-gH-pol"/>
+                    <constraint firstItem="THH-wc-mKQ" firstAttribute="top" secondItem="jNg-vM-kox" secondAttribute="bottom" constant="3" id="tXv-3j-GoT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="nameL" destination="jNg-vM-kox" id="mkt-lQ-YZx"/>
+                <outlet property="textL" destination="neU-N8-hO0" id="uPf-Xa-pPB"/>
+                <outlet property="textV" destination="THH-wc-mKQ" id="q0E-6g-U4m"/>
+            </connections>
+            <point key="canvasLocation" x="-1222" y="74"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MY_XTMyclubCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="204" height="46"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="204" height="46"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="钻石.png" translatesAutoresizingMaskIntoConstraints="NO" id="S1U-8E-xir">
+                        <rect key="frame" x="14" y="14" width="19" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="19" id="HtS-PR-wuv"/>
+                            <constraint firstAttribute="height" constant="18" id="Xba-gy-HLS"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的俱乐部" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RXO-pr-Qtu">
+                        <rect key="frame" x="54" y="0.0" width="150" height="46"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.76078431372549016" green="0.76078431372549016" blue="0.76078431372549016" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qtk-UK-KoI">
+                        <rect key="frame" x="0.0" y="45" width="204" height="1"/>
+                        <color key="backgroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="eky-gQ-wnV"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="RXO-pr-Qtu" secondAttribute="trailing" id="21S-pB-I5v"/>
+                <constraint firstItem="S1U-8E-xir" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="14" id="D6s-MZ-wQk"/>
+                <constraint firstItem="Qtk-UK-KoI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="G0C-ZH-cU5"/>
+                <constraint firstAttribute="trailing" secondItem="Qtk-UK-KoI" secondAttribute="trailing" id="GYY-9w-sQx"/>
+                <constraint firstAttribute="bottom" secondItem="Qtk-UK-KoI" secondAttribute="bottom" id="GbA-9N-k05"/>
+                <constraint firstAttribute="bottom" secondItem="RXO-pr-Qtu" secondAttribute="bottom" id="HwQ-sv-WSx"/>
+                <constraint firstItem="RXO-pr-Qtu" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="54" id="Obj-n1-dbF"/>
+                <constraint firstItem="S1U-8E-xir" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="14" id="az5-M6-LO1"/>
+                <constraint firstItem="RXO-pr-Qtu" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="gpY-bS-ySJ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="204" height="80"/>
+            <point key="canvasLocation" x="103" y="67"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="钻石.png" width="21" height="19"/>
+    </resources>
+</document>

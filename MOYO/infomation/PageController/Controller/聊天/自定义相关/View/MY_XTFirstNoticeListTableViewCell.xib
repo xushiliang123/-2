@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="117" id="KGk-i7-Jjw" customClass="MY_XTFirstNoticeListTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="423" height="117"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="423" height="116.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ehu-4Z-MlF">
+                        <rect key="frame" x="10" y="0.0" width="403" height="117"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您发布的头像未通过审核" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IBR-Fk-K5e">
+                                <rect key="frame" x="15" y="10" width="378" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="bex-dg-alg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="原因" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xye-AZ-lrN">
+                                <rect key="frame" x="15" y="40" width="69" height="10"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="8MN-rW-uuR"/>
+                                    <constraint firstAttribute="width" constant="69" id="DJg-fD-SZm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="是肯定复健科收款方后悔当时看看恢复很快打开就复健科的防守打法" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zcw-kK-FEp">
+                                <rect key="frame" x="15" y="60" width="378" height="47"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Zcw-kK-FEp" secondAttribute="bottom" constant="10" id="J51-SA-B5u"/>
+                            <constraint firstItem="xye-AZ-lrN" firstAttribute="top" secondItem="IBR-Fk-K5e" secondAttribute="bottom" constant="10" id="JDz-Jv-Mbs"/>
+                            <constraint firstItem="IBR-Fk-K5e" firstAttribute="top" secondItem="Ehu-4Z-MlF" secondAttribute="top" constant="10" id="S33-Nf-VGP"/>
+                            <constraint firstItem="Zcw-kK-FEp" firstAttribute="leading" secondItem="Ehu-4Z-MlF" secondAttribute="leading" constant="15" id="e28-ql-h0o"/>
+                            <constraint firstAttribute="trailing" secondItem="IBR-Fk-K5e" secondAttribute="trailing" constant="10" id="fkt-xV-W8c"/>
+                            <constraint firstItem="IBR-Fk-K5e" firstAttribute="leading" secondItem="Ehu-4Z-MlF" secondAttribute="leading" constant="15" id="h6f-PC-hY8"/>
+                            <constraint firstAttribute="trailing" secondItem="Zcw-kK-FEp" secondAttribute="trailing" constant="10" id="iLe-bj-rNe"/>
+                            <constraint firstItem="Zcw-kK-FEp" firstAttribute="top" secondItem="xye-AZ-lrN" secondAttribute="bottom" constant="10" id="oj9-9o-qYC"/>
+                            <constraint firstItem="xye-AZ-lrN" firstAttribute="leading" secondItem="Ehu-4Z-MlF" secondAttribute="leading" constant="15" id="t5r-MH-PT6"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.40000000600000002" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Ehu-4Z-MlF" secondAttribute="bottom" id="6pM-qp-Uxb"/>
+                    <constraint firstItem="Ehu-4Z-MlF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="f9P-z2-PzV"/>
+                    <constraint firstItem="Ehu-4Z-MlF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="km5-ti-msO"/>
+                    <constraint firstAttribute="trailing" secondItem="Ehu-4Z-MlF" secondAttribute="trailing" constant="10" id="vGw-Ud-S9n"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="InfoLabel" destination="Zcw-kK-FEp" id="guv-R9-0ce"/>
+                <outlet property="TagLabel" destination="IBR-Fk-K5e" id="yhX-8Y-Rrz"/>
+                <outlet property="yuanyin" destination="xye-AZ-lrN" id="IkN-9e-lJH"/>
+            </connections>
+            <point key="canvasLocation" x="-9.5" y="80.5"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MY_TTLClubNoticeEndTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="81"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="80.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="豆子" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6yK-cl-f7L">
+                        <rect key="frame" x="93" y="11.5" width="185" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="185" id="iAV-sc-2Up"/>
+                            <constraint firstAttribute="height" constant="20" id="zQb-gP-B3C"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.23529411764705882" green="0.23529411764705882" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="申请加入  小仙女联盟" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edC-mp-K02">
+                        <rect key="frame" x="93" y="34" width="185" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="Tbh-Vt-NXQ"/>
+                            <constraint firstAttribute="width" constant="185" id="eaP-b2-DaZ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="处理人： 美少女吧" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bi7-UX-FYt">
+                        <rect key="frame" x="93" y="51" width="185" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="4Dz-sM-qZg"/>
+                            <constraint firstAttribute="width" constant="185" id="8Z1-uB-Tqf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已同意" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LiT-lp-2vx">
+                        <rect key="frame" x="287" y="30" width="73" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="73" id="RFH-oq-i6d"/>
+                            <constraint firstAttribute="height" constant="21" id="uKt-gp-gse"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.23921568630000001" green="0.23921568630000001" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="占位图" translatesAutoresizingMaskIntoConstraints="NO" id="Var-ZK-hWh">
+                        <rect key="frame" x="15" y="11" width="58" height="58"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="58" id="9QS-ob-RKy"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="edC-mp-K02" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="34" id="AnR-nd-ThQ"/>
+                    <constraint firstItem="Var-ZK-hWh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11.5" id="F7w-hK-0qz"/>
+                    <constraint firstItem="Var-ZK-hWh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="ITe-qL-V96"/>
+                    <constraint firstItem="6yK-cl-f7L" firstAttribute="leading" secondItem="Var-ZK-hWh" secondAttribute="trailing" constant="20" id="WnK-5T-17p"/>
+                    <constraint firstItem="bi7-UX-FYt" firstAttribute="top" secondItem="6yK-cl-f7L" secondAttribute="bottom" constant="20" id="ZcB-FF-BGy"/>
+                    <constraint firstAttribute="trailing" secondItem="LiT-lp-2vx" secondAttribute="trailing" constant="15" id="dbw-gP-Lqm"/>
+                    <constraint firstItem="edC-mp-K02" firstAttribute="leading" secondItem="Var-ZK-hWh" secondAttribute="trailing" constant="20" id="ddM-xE-97N"/>
+                    <constraint firstItem="6yK-cl-f7L" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11.5" id="ecs-1a-Ohk"/>
+                    <constraint firstItem="bi7-UX-FYt" firstAttribute="leading" secondItem="Var-ZK-hWh" secondAttribute="trailing" constant="20" id="h5C-G2-QPt"/>
+                    <constraint firstItem="LiT-lp-2vx" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ocP-ut-9p2"/>
+                    <constraint firstAttribute="bottom" secondItem="Var-ZK-hWh" secondAttribute="bottom" constant="11.5" id="zLy-29-eGB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="clubLabel" destination="edC-mp-K02" id="jCJ-sI-AYh"/>
+                <outlet property="iconImgv" destination="Var-ZK-hWh" id="o5i-73-WI8"/>
+                <outlet property="nameLabel" destination="6yK-cl-f7L" id="ObU-WZ-3Pj"/>
+                <outlet property="ownerLabel" destination="bi7-UX-FYt" id="6dV-Dz-J4d"/>
+                <outlet property="stateLabel" destination="LiT-lp-2vx" id="PR9-pL-Geu"/>
+            </connections>
+            <point key="canvasLocation" x="17" y="50"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="占位图" width="75" height="75"/>
+    </resources>
+</document>

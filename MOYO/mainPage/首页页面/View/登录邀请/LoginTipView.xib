@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LoginTipView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J0m-GT-yo7">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ns4-WH-pEK">
+                    <rect key="frame" x="37" y="228" width="300" height="211"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wrp-Eg-frs">
+                            <rect key="frame" x="264" y="0.0" width="36" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="36" id="e02-wc-t5T"/>
+                                <constraint firstAttribute="height" constant="36" id="y95-a9-blA"/>
+                            </constraints>
+                            <state key="normal" image="错误.png"/>
+                            <connections>
+                                <action selector="closeTipsView:" destination="iN0-l3-epB" eventType="touchUpInside" id="IgL-IR-BKj"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="亲，快去邀请好友赚的大钱！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WIo-Lg-tbK">
+                            <rect key="frame" x="0.0" y="38" width="300" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="T42-ms-vYY"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <color key="textColor" red="0.23529411764705882" green="0.23529411764705882" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BEb-qW-2ZI">
+                            <rect key="frame" x="55" y="74" width="190" height="42"/>
+                            <color key="backgroundColor" red="0.8862745098" green="0.75294117650000003" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="42" id="uNs-PS-AEh"/>
+                            </constraints>
+                            <state key="normal" title="邀请白富美">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="6"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="goInviteGril:" destination="iN0-l3-epB" eventType="touchUpInside" id="NQy-gU-sLd"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="wrp-Eg-frs" secondAttribute="trailing" id="0Z9-lQ-K4p"/>
+                        <constraint firstItem="WIo-Lg-tbK" firstAttribute="leading" secondItem="Ns4-WH-pEK" secondAttribute="leading" id="F7t-WC-ZN3"/>
+                        <constraint firstAttribute="trailing" secondItem="WIo-Lg-tbK" secondAttribute="trailing" id="HDt-2x-Src"/>
+                        <constraint firstItem="BEb-qW-2ZI" firstAttribute="leading" secondItem="Ns4-WH-pEK" secondAttribute="leading" constant="55" id="Wgb-CX-OO1"/>
+                        <constraint firstItem="wrp-Eg-frs" firstAttribute="top" secondItem="Ns4-WH-pEK" secondAttribute="top" id="b6j-25-tlP"/>
+                        <constraint firstItem="BEb-qW-2ZI" firstAttribute="top" secondItem="WIo-Lg-tbK" secondAttribute="bottom" constant="16" id="cSl-w9-cM6"/>
+                        <constraint firstAttribute="height" constant="211" id="ecb-uW-Uc6"/>
+                        <constraint firstAttribute="trailing" secondItem="BEb-qW-2ZI" secondAttribute="trailing" constant="55" id="hrm-uz-Z61"/>
+                        <constraint firstAttribute="width" constant="300" id="qtd-Uy-n69"/>
+                        <constraint firstItem="WIo-Lg-tbK" firstAttribute="top" secondItem="Ns4-WH-pEK" secondAttribute="top" constant="38" id="rvM-PT-5sz"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="6"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PZG-n7-xWf">
+                    <rect key="frame" x="92" y="362" width="190" height="42"/>
+                    <color key="backgroundColor" red="0.8862745098" green="0.75294117650000003" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="23c-cq-QhQ"/>
+                    </constraints>
+                    <state key="normal" title="邀请高富帅"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="6"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="goInviteMan:" destination="iN0-l3-epB" eventType="touchUpInside" id="5JI-dI-Hq8"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="PZG-n7-xWf" firstAttribute="leading" secondItem="BEb-qW-2ZI" secondAttribute="leading" id="0SL-Wi-Qkj"/>
+                <constraint firstItem="J0m-GT-yo7" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="Oe7-da-HB7"/>
+                <constraint firstItem="J0m-GT-yo7" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="TV8-Ya-X2u"/>
+                <constraint firstItem="J0m-GT-yo7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="UWg-Mr-90v"/>
+                <constraint firstItem="Ns4-WH-pEK" firstAttribute="centerY" secondItem="J0m-GT-yo7" secondAttribute="centerY" id="WtY-qa-OiD"/>
+                <constraint firstItem="Ns4-WH-pEK" firstAttribute="centerX" secondItem="J0m-GT-yo7" secondAttribute="centerX" id="XLZ-Vc-YpL"/>
+                <constraint firstItem="PZG-n7-xWf" firstAttribute="top" secondItem="BEb-qW-2ZI" secondAttribute="bottom" constant="18" id="aVk-Ft-JTX"/>
+                <constraint firstItem="PZG-n7-xWf" firstAttribute="trailing" secondItem="BEb-qW-2ZI" secondAttribute="trailing" id="hMA-Or-u0x"/>
+                <constraint firstItem="J0m-GT-yo7" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="m3g-Y9-BIv"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="bgView" destination="J0m-GT-yo7" id="suK-He-Rln"/>
+                <outlet property="goInviteGril" destination="BEb-qW-2ZI" id="jNf-em-zLJ"/>
+                <outlet property="tipView" destination="Ns4-WH-pEK" id="upq-Ld-9YW"/>
+            </connections>
+            <point key="canvasLocation" x="-53" y="-153"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="错误.png" width="13" height="13"/>
+    </resources>
+</document>

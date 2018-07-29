@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MY_TTLCerMetailTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="129"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="128.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vMy-Ax-7GH">
+                        <rect key="frame" x="15" y="15" width="70" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="vMy-Ax-7GH" secondAttribute="height" multiplier="1:1" id="CC3-2U-HKR"/>
+                            <constraint firstAttribute="width" constant="70" id="MUc-dj-lNW"/>
+                            <constraint firstAttribute="height" constant="70" id="qcM-wn-ftr"/>
+                        </constraints>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b8n-p4-0dy">
+                        <rect key="frame" x="100" y="15" width="70" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="70" id="Kjp-kV-IbA"/>
+                            <constraint firstAttribute="width" constant="70" id="UfA-M6-bsL"/>
+                            <constraint firstAttribute="width" secondItem="b8n-p4-0dy" secondAttribute="height" multiplier="1:1" id="mIc-3T-bdb"/>
+                        </constraints>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DoX-9T-PTJ">
+                        <rect key="frame" x="185" y="15" width="70" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="AC7-eI-fBE"/>
+                            <constraint firstAttribute="height" constant="70" id="GHz-z1-eE1"/>
+                            <constraint firstAttribute="width" secondItem="DoX-9T-PTJ" secondAttribute="height" multiplier="1:1" id="dow-Ye-MfO"/>
+                        </constraints>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dUZ-4E-JGk">
+                        <rect key="frame" x="270" y="15" width="70" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="dUZ-4E-JGk" secondAttribute="height" multiplier="1:1" id="5QK-xS-pWK"/>
+                            <constraint firstAttribute="width" constant="70" id="Cwp-iL-oZG"/>
+                            <constraint firstAttribute="height" constant="70" id="EQB-A5-lwq"/>
+                        </constraints>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="点击可添加或更换图片，共4张" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z3R-fs-FAt">
+                        <rect key="frame" x="15" y="100" width="325" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Z3R-fs-FAt" secondAttribute="height" multiplier="325:17" id="IGM-dz-U0L"/>
+                            <constraint firstAttribute="height" constant="17" id="qPp-NA-od7"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="vMy-Ax-7GH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="2zf-Ds-dAB"/>
+                    <constraint firstItem="b8n-p4-0dy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="Fq3-Kg-lo2"/>
+                    <constraint firstItem="vMy-Ax-7GH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Nv9-kp-GUL"/>
+                    <constraint firstItem="DoX-9T-PTJ" firstAttribute="leading" secondItem="b8n-p4-0dy" secondAttribute="trailing" constant="15" id="OUu-ke-9p9"/>
+                    <constraint firstItem="Z3R-fs-FAt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="OXY-Zg-bQ2"/>
+                    <constraint firstItem="Z3R-fs-FAt" firstAttribute="top" secondItem="dUZ-4E-JGk" secondAttribute="bottom" constant="15" id="Qos-ie-E25"/>
+                    <constraint firstItem="dUZ-4E-JGk" firstAttribute="leading" secondItem="DoX-9T-PTJ" secondAttribute="trailing" constant="15" id="VCg-Zd-H4N"/>
+                    <constraint firstItem="DoX-9T-PTJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="XNS-ME-knC"/>
+                    <constraint firstItem="b8n-p4-0dy" firstAttribute="leading" secondItem="vMy-Ax-7GH" secondAttribute="trailing" constant="15" id="arc-eC-CLz"/>
+                    <constraint firstItem="dUZ-4E-JGk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="gyO-ba-QMs"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnIcon1" destination="vMy-Ax-7GH" id="ag3-rW-lCJ"/>
+                <outlet property="btnIcon2" destination="b8n-p4-0dy" id="JgI-FH-V0F"/>
+                <outlet property="btnIcon3" destination="DoX-9T-PTJ" id="r6G-vL-14w"/>
+                <outlet property="btnIcon4" destination="dUZ-4E-JGk" id="Wr2-fg-P0B"/>
+                <outlet property="labelTitle" destination="Z3R-fs-FAt" id="T0P-Dz-Utb"/>
+            </connections>
+            <point key="canvasLocation" x="-182" y="65"/>
+        </tableViewCell>
+    </objects>
+</document>

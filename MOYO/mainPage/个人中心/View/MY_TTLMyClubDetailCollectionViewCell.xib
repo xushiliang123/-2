@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MY_TTLMyClubDetailCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="204" height="46"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="204" height="46"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="听听需要(98/200)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U8J-z7-gNV">
+                        <rect key="frame" x="0.0" y="0.0" width="183" height="46"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JQx-kl-vNr">
+                        <rect key="frame" x="0.0" y="45" width="204" height="1"/>
+                        <color key="backgroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="vOH-dJ-9CI"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="右键头.png" translatesAutoresizingMaskIntoConstraints="NO" id="39X-5c-9ke">
+                        <rect key="frame" x="188" y="16" width="8" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="7JD-PE-Ork"/>
+                            <constraint firstAttribute="width" constant="8" id="ZHd-Jl-Sj3"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="JQx-kl-vNr" secondAttribute="trailing" id="1A0-pB-mgc"/>
+                <constraint firstItem="JQx-kl-vNr" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Dlt-Vn-0yw"/>
+                <constraint firstItem="39X-5c-9ke" firstAttribute="leading" secondItem="U8J-z7-gNV" secondAttribute="trailing" constant="5" id="HUs-HO-U0r"/>
+                <constraint firstAttribute="bottom" secondItem="JQx-kl-vNr" secondAttribute="bottom" id="KZT-dH-pOG"/>
+                <constraint firstItem="U8J-z7-gNV" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ZqU-RI-kPB"/>
+                <constraint firstItem="39X-5c-9ke" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="16" id="cYQ-si-5zr"/>
+                <constraint firstAttribute="bottom" secondItem="U8J-z7-gNV" secondAttribute="bottom" id="ijd-vG-6cC"/>
+                <constraint firstItem="U8J-z7-gNV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="uv2-xK-Nec"/>
+                <constraint firstAttribute="trailing" secondItem="U8J-z7-gNV" secondAttribute="trailing" constant="21" id="yXt-rp-jLD"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="184" height="77"/>
+            <connections>
+                <outlet property="ClubNameLabel" destination="U8J-z7-gNV" id="Ghp-MS-OvA"/>
+            </connections>
+            <point key="canvasLocation" x="92" y="65"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="右键头.png" width="8" height="14"/>
+    </resources>
+</document>
